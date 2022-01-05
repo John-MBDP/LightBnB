@@ -13,3 +13,8 @@ INSERT INTO reservations (start_date, end_date, property_id, guest_id)
 VALUES ('2022-01-04', '2022-02-02', 3, 1),
 ('2022-01-05', '2022-02-03', 2, 2),
 ('2022-01-06', '2022-02-04', 1, 3);
+
+INSERT INTO property_reviews (guest_id, property_id, reservation_id, rating, message)
+VALUES (1, 3, 1, 5, 'Best LightBnB ever!'),
+(2, 2, 2, 3, 'Nothing to complain about :)'),
+(3, 1, 3, 4, 'Great location!');
