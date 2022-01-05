@@ -8,3 +8,8 @@ INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover
 VALUES ('1', 'title1', 'description', '//images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2086676/pexels-photo-2086676.jpeg', 150, 'Canada', '651 Nami Road', 'Bohbatev', 'Alberta', '83680'),
 ('2', 'title2', 'description', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg', 200, 'Canada', '1650 Hejto Center', 'Genwezuj', 'Newfoundland And Labrador', '44583'),
 ('3', 'title3', 'description', 'https://images.pexels.com/photos/2080018/pexels-photo-2080018.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2080018/pexels-photo-2080018.jpeg', 90, 'Canada', '513 Powov Grove ', 'Montreal', 'Quebec', '38051');
+
+INSERT INTO reservations (start_date, end_date, property_id, guest_id)
+VALUES ('2022-01-04', '2022-02-02', 3, 1),
+('2022-01-05', '2022-02-03', 2, 2),
+('2022-01-06', '2022-02-04', 1, 3);
