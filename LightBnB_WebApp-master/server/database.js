@@ -35,6 +35,7 @@ const getUserWithEmail = function (email) {
       console.log("query error:", err);
     });
 };
+
 exports.getUserWithEmail = getUserWithEmail;
 
 /**
@@ -208,7 +209,7 @@ const addProperty = function (property) {
     property.post_code,
   ];
 
-  return db
+  return pool
     .query(queryString, values)
     .then((res) => {
       return res.rows[0];
